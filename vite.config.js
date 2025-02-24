@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: "./src/button.jsx",
       name: "CustomButton",
-      fileName: (format) => `BsdkButton.${format === "es" ? "js" : "umd.cjs"}`,
+      fileName: (format) => `BsdkButton.${format}.js`,
       formats: ["es", "umd"], // Generate ES and UMD formats for browser/CDN
     },
     rollupOptions: {
