@@ -12,7 +12,6 @@ export default defineConfig({
       formats: ["es", "umd"], // Generate ES and UMD formats for browser/CDN
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
