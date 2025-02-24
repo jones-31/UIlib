@@ -9,9 +9,10 @@ export default defineConfig({
       entry: "./src/button.jsx",
       name: "CustomButton",
       fileName: (format) => `BsdkButton.${format}.js`,
-      formats: ["es", "umd"], // Generate ES and UMD formats for browser/CDN
+      formats: ["umd"], // Generate ES and UMD formats for browser/CDN
     },
     rollupOptions: {
+      external: ["react", "react-dom"],
       output: {
         globals: {
           react: "React",
