@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div>
-        <Button />
+      <Button label="Click Me" className="btn-success" events={{ click: handleClick }} id="testButton" />
       </div>
     </>
   );
