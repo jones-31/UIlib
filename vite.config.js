@@ -21,5 +21,12 @@ export default defineConfig({
       },
     },
     cssCodeSplit: true, 
+    css: {
+      preprocessorOptions: {
+        css: {
+          additionalData: `@import "./src/button.css";`, // ✅ Ensure CSS is included
+        },
+      },
+    },
   },
 })
