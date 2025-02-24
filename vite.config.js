@@ -5,14 +5,15 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   define: {
-    "process.env.NODE_ENV": JSON.stringify("production"), 
+    "process.env": {}, 
+    "process.env.NODE_ENV": JSON.stringify("production"),
   },
   build: {
     lib: {
       entry: "./src/button.jsx",
       name: "CustomButton",
       fileName: (format) => `BsdkButton.${format}.js`,
-      formats: ["umd"], // Generate ES and UMD formats for browser/CDN
+      formats: ["umd"], 
     },
     rollupOptions: {
       external: ["react", "react-dom"],
