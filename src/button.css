@@ -30,7 +30,16 @@
     background: #1762ec !important;
 }
 
-.btn-success:hover{
+.btn-primary:hover{
     background: #184af0;
         outline:1px solid #4c79f5
+}
+
+.btn-danger{
+    background: #db332d !important;
+}
+
+.btn-danger:hover{
+    background: #fa2e13;
+        outline:1px solid #f56d63
 }
