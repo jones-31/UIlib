@@ -10,7 +10,8 @@ function App() {
   return (
     <>
       <div>
-      <Button label="Click Me" className="btn-success" events={{ click: handleClick }} id="testButton" />
+        <h1>WEBAPP</h1>
+      <Button label="Click Me" className="btn-success" events={{ click: handleClick }} id="test-button" />
       </div>
     </>
   );
