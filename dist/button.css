@@ -1,0 +1,22 @@
+.btn-success{
+    border-radius: 5px;
+    background: #0c9800;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    max-height: max-content;
+    max-width: max-content;
+    color: white;
+    width: 100px;
+    height: 50px;
+    min-width: min-content;
+    min-height: min-content;
+    align-content: center;
+    margin: 2px;
+    text-transform: capitalize;
+}
+
+.btn-success:hover{
+    background: #086308;
+        outline:1px solid #67d77a
+}
