@@ -1,5 +1,6 @@
 .btn{
     border-radius: 5px;
+    border:1px solid grey;
     background: #000000;
     outline: none;
     border: none;
@@ -19,27 +20,30 @@
 
 .btn-success{
     background: #0c9800 !important;
+    border:none;
 }
 
 .btn-success:hover{
-    background: #086308;
+    background: #086308 !important;
         outline:1px solid #67d77a
 }
 
 .btn-primary{
     background: #1762ec !important;
+    border:none;
 }
 
 .btn-primary:hover{
-    background: #184af0;
+    background: #184af0 !important;
         outline:1px solid #4c79f5
 }
 
 .btn-danger{
     background: #db332d !important;
+    border:none;
 }
 
 .btn-danger:hover{
-    background: #fa2e13;
+    background: #fa2e13 !important;
         outline:1px solid #f56d63
 }
