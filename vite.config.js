@@ -12,17 +12,12 @@ export default defineConfig({
       },
     }),
   ],
-  // define: {
-  //   "process.env": {}, 
-  //   "process.env.NODE_ENV": JSON.stringify("production"),
-  // },
   build: {
-    lib: {
-      entry: "./index.js",
-      name: "BsdkUILibrary",
-      fileName: (format) => `bsdkui-library.${format}.js`,
-    },
     rollupOptions: {
+      input: {
+        reactComponents: './index.js',   
+        webComponents: './webcomponents.js',  
+      },
       external: ["react", "react-dom"],
       output: {
         globals: {
