@@ -52,6 +52,7 @@ const Button = ({ label, className, id, ...props }) => {
     </button>
   );
 };
+export default Button;
 
 class CustomButton extends HTMLElement {
   connectedCallback() {

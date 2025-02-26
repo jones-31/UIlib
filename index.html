@@ -5,8 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <script src="./src/textboxWebComponent.js"></script>
   </head>
   <body>
+    <bsdk-textbox placeholder="Name" class="input-field" oninput="console.log('Input event:', event.target.value)"></bsdk-textbox>
+    <bsdk-button class="btn btn-success" onclick="alert('Click event triggered')">Submit</bsdk-button>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -18,10 +18,9 @@ export default defineConfig({
   // },
   build: {
     lib: {
-      entry: "./src/button.jsx",
-      name: "CustomButton",
-      fileName: (format) => `BsdkButton.${format}.js`,
-      formats: ["umd"], 
+      entry: "./index.js",
+      name: "BsdkUILibrary",
+      fileName: (format) => `bsdkui-library.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
@@ -29,14 +28,6 @@ export default defineConfig({
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
-        },
-      },
-    },
-    cssCodeSplit: true, 
-    css: {
-      preprocessorOptions: {
-        css: {
-          additionalData: `@import "./src/button.css";`, // ✅ Ensure CSS is included
         },
       },
     },
