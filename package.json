@@ -14,9 +14,11 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:react": "vite build --config vite.config.js",
+    "build:web": "vite build --config vite.config.webcomp.js",
+    "build": "npm run build:react && npm run build:web"
   },
   "dependencies": {
     "react": "^19.0.0",

@@ -13,18 +13,15 @@ export default defineConfig({
     }),
   ],
   build: {
+    outDir: "dist/react",
+    lib: {
+      entry: "./index.js",
+      name: "ReactComponents",
+      formats: ["es", "cjs"], // ES Module and CommonJS
+      fileName: (format) => `react.${format}.js`,
+    },
     rollupOptions: {
-      input: {
-        reactComponents: './index.js',   
-        webComponents: './webcomponents.js',  
-      },
-      external: ["react", "react-dom"],
-      output: {
-        globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
-        },
-      },
+      external: ["react", "react-dom"], // Prevent bundling React itself
     },
   },
 })
