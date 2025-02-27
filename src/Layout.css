@@ -1,0 +1,133 @@
+.Header {
+  display: inline;
+  margin: 0px 10px;
+}
+.HeaderLogo {
+  width: 50px;
+  position: relative;
+  color: white;
+  font-size: 30px;
+}
+
+.senpai {
+  position: relative;
+  color: white; /* Initial color */
+  background: linear-gradient(to right, red 0%, red 100%);
+  background-size: 0% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: fillColor 200s linear forwards;
+}
+
+@keyframes fillColor {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.hcontainer {
+  z-index: 1000; 
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.logo {
+  padding: 5px;
+  font-weight: 500;
+  margin: 1px;
+  background-color: trans;
+  display: flex;
+  justify-content: space-between;
+}
+.logo ul {
+  list-style-type: none;
+  right: 10%;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  font-size: 16px;
+  
+}
+.logo ul li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  width: max-content;
+  min-width: 50px;
+  max-width: 200px;
+}
+
+.logo ul li a:hover{
+  color: red;
+}
+
+.logo ul li  a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+}
+
+.mobilemenu {
+  display: none;
+}
+.searchicon {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  color: #fff;
+  font-size: 16px;
+}
+.fcontainer {
+  display: block;
+  height: 150px;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  align-content: center;
+}
+
+.fcontainer h1{
+  color: #fff;
+  align-content: center;
+    position: relative;
+  
+}
+@media (width < 700px) {
+  .mobilemenu {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 16px;
+  }
+  .logo ul{
+    display: block;
+    width: fit-content;
+  }
+  .logo ul li {
+    max-width: inherit;
+    width: 100%;
+  }
+}
+
+.qrcode{
+  display:block;
+  margin-top: 62px;
+  background-color: brown;
+}
+
+main{
+   
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+    
+}
