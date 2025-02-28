@@ -1,0 +1,58 @@
+.card {
+  
+  border-radius: 10px;
+  padding: 0px 0px 10px 0px;
+  width: 250px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.card figure img {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  border-radius: inherit;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+.card figure img:hover {
+  transform: scale(1.2);
+}
+
+.content {
+  margin: 10px 5px;
+  text-align: center;
+}
+.content p {
+  max-height: 100px;
+  min-height: auto;
+  overflow: auto;
+}
+
+.actions {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 100px 100px;
+  column-gap: 10px;
+  row-gap: 15px;
+  padding: 10px;
+}
+.actions > * {
+  justify-self: center;
+}
+.card h2 {
+  margin: 5px;
+  overflow: hidden;
+  text-wrap: auto;
+}
+
