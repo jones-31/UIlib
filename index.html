@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,10 +6,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
     <script src="./dist/webcomponent/webcomponents.es.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jones-31/UIlib@main/dist/react/bsdklib2.css?v=444433"
+    />
+    <link
+    rel="stylesheet"
+    href="./src/styles/card.css"
+  />
+    <!-- <link rel="./dist/react/bsdklib.css" type="stylesheet"> -->
+    <!-- <style>
+      body {
+        background: #e9edd6;
+        font-family: "Poppins", sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .owl-carousel.version-1,
+      .owl-carousel.version-2 {
+        position: relative;
+        padding: 15px 35px 0;
+      }
+      .logo-slider-1,
+      .logo-slider-2 {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto 40px;
+        text-align: center;
+      }
+      .owl-carousel .owl-item {
+        background: #fff;
+        padding: 0 20px;
+      }
+      .owl-nav button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 30px;
+        height: 30px;
+        background: #fff !important;
+        border-radius: 50%;
+        margin: auto 0;
+        box-shadow: 0px 0px 5px #00000069;
+      }
+      .owl-nav button.owl-next {
+        right: 0;
+      }
+      .owl-nav button.owl-prev {
+        left: 0;
+      }
+      .version-2 h2 {
+        margin: 0px;
+        font-size: 20px;
+      }
+      .version-2 p {
+        font-size: 15px;
+      }
+      .version-2 .owl-item {
+        text-align: center;
+        padding: 10px 20px 20px;
+      }
+      .version-2 .owl-item img {
+        width: 160px;
+        margin: 0 auto;
+      }
+    </style>
+
+    <script>
+      // Slider version 1
+      $(".owl-carousel.version-1").owlCarousel({
+        loop: true,
+        margin: 15,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 2,
+            nav: true,
+          },
+          600: {
+            items: 3,
+            nav: false,
+          },
+          1000: {
+            items: 4,
+            nav: true,
+          },
+        },
+      });
+
+      // Slider version 2
+      $(".owl-carousel.version-2").owlCarousel({
+        loop: true,
+        margin: 15,
+        center: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          600: {
+            items: 2,
+            nav: false,
+          },
+          1000: {
+            items: 3,
+            nav: true,
+          },
+        },
+      });
+    </script> -->
+
+   
   </head>
   <body>
-    <bsdk-textbox placeholder="Name" class="input-field" oninput="console.log('Input event:', event.target.value)"></bsdk-textbox>
-    <bsdk-button class="btn btn-success" onclick="alert('Click event triggered')">Submit</bsdk-button>
+    <!-- Simple logo carousel slider -->
+    <!-- <div class="logo-slider-1">
+      <h2>Simple partners logo carousel slider</h2>
+      <div class="owl-carousel version-1">
+        <div>
+          <img src="./images/download.jfif" />
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+        </div>
+      </div>
+    </div> -->
+    <!-- End Simple logo carousel slider -->
+
+    <!-- Logo slider with Title and description -->
+    <!-- <div class="logo-slider-2">
+      <h2>Logo slider with Title and description</h2>
+      <div class="owl-carousel version-2">
+        <div>
+          <img src="./images/download.jfif" />
+          <h2>Logo title</h2>
+          <p>
+            Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst.
+            Sed aliquam ultrices mauris.
+          </p>
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+          <h2>Logo title</h2>
+          <p>
+            Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst.
+            Sed aliquam ultrices mauris.
+          </p>
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+          <h2>Logo title</h2>
+          <p>
+            Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst.
+            Sed aliquam ultrices mauris.
+          </p>
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+          <h2>Logo title</h2>
+          <p>
+            Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst.
+            Sed aliquam ultrices mauris.
+          </p>
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+          <h2>Logo title</h2>
+          <p>
+            Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst.
+            Sed aliquam ultrices mauris.
+          </p>
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+          <h2>Logo title</h2>
+          <p>
+            Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst.
+            Sed aliquam ultrices mauris.
+          </p>
+        </div>
+        <div>
+          <img src="./images/download.jfif" />
+          <h2>Logo title</h2>
+          <p>
+            Nunc interdum lacus sit amet orci. In hac habitasse platea dictumst.
+            Sed aliquam ultrices mauris.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <!-- end slider View with Title and description -->
+
+    <div class="card">
+      <figure>
+        <img src="./images/download.jfif" alt="Product" />
+      </figure>
+      
+      <div class="content">
+        <h2>Desk setup Desk setup</h2>
+        <p>Programers pc setup at home from a gamers perspective Programers pc setup at home from a gamers perspectiveProgramers pc setup at home from a gamers </p>
+        
+      </div>
+      <div class="actions">
+        <button
+          class="btn btn-danger"
+          onclick="alert('Cancel event triggered')"
+        >
+          Cancel
+        </button>
+        <button
+          class="btn btn-success"
+          onclick="alert('Submit event triggered')"
+        >
+          Submit
+        </button>
+       
+      </div>
+    </div>
+
+    <!-- <bsdk-textbox placeholder="Name" class="input-field" oninput="console.log('Input event:', event.target.value)"></bsdk-textbox>
+    <bsdk-button class="btn btn-success" onclick="alert('Click event triggered')">Submit</bsdk-button> -->
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
